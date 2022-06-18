@@ -28,13 +28,13 @@
     --font-secondary: #929AAB;
     --bg-primary: #EEEEEE;
     --bg-secondary: #F7F7F7;
-    --color-primary: #00e5e5;
+    /* --color-primary: #00e5e5; */
     --color-fade-primary: #ccffff;
-    --color-success: #007300;
+    /* --color-success: #007300; */
     --color-fade-success: #cce5cc;
-    --color-danger: #e500e5;
+    /* --color-danger: #e500e5; */
     --color-fade-danger: #ffccff;
-    --color-warn: #e5e500;
+    /* --color-warn: #e5e500; */
     --color-fade-warn: #ffffcc;
     --color-dark: #191919;
     --color-fade-dark: #cccccc;
@@ -50,6 +50,7 @@ body{
     font-family: var(--font-p);
     font-size: var(--font-size);
     background-color: var(--bg-primary);
+    color: var(--color-dark);
 }
 
 /* black and white image */
@@ -188,10 +189,69 @@ h2,h3,h4,h5{
 }
 
 /* icons with badge  */
-.badge > img.icon{
+img.icon{
     width: 2em;
 }
 .badge > .icon+.avatar-presence{
     top: 0.2em;
     left: 2.8em;
+}
+
+/* ---------------------------------------------------------button  */
+button{
+    border: none;
+    padding: 1em;
+    font-family: var(--font-p);
+    cursor: pointer;
+    display: inline-block;
+}
+.btn-primary{
+    background-color: var(--color-fade-primary);
+}
+.btn-danger{
+    background-color: var(--color-fade-danger);
+}
+.btn-warn{
+    background-color: var(--color-fade-warn);
+}
+.btn-success{
+    background-color: var(--color-fade-success);
+}
+
+/* outline button  */
+.btn-outline-primary{
+    border: 2px solid var(--color-fade-primary);
+}
+.btn-outline-primary:hover{
+    background: var(--color-fade-primary);
+}
+.btn-outline-danger{
+    border: 2px solid var(--color-fade-danger);
+}
+.btn-outline-danger:hover{
+    background: var(--color-fade-danger);
+}
+.btn-outline-warn{
+    border: 2px solid var(--color-fade-warn);
+}
+.btn-outline-warn:hover{
+    background: var(--color-fade-warn);
+}
+.btn-outline-success{
+    border: 2px solid var(--color-fade-success);
+}
+.btn-outline-success:hover{
+    background: var(--color-fade-success);
+}
+
+
+/* button with icon  */
+.btn-icon{
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.icon{
+    filter: grayscale(0) contrast(0) brightness(0) saturate(0);
+    mix-blend-mode: darken;
 }
