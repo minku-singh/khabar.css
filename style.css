@@ -260,6 +260,7 @@ button{
 .input{
     position: relative;
     display: inline-block;
+    margin: 0.8em;
 }
 input{
     padding: 0.7em;
