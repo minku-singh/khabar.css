@@ -255,3 +255,42 @@ button{
     filter: grayscale(0) contrast(0) brightness(0) saturate(0);
     mix-blend-mode: darken;
 }
+
+/* -------------------------------------------------------- input  */
+.input{
+    position: relative;
+    display: inline-block;
+}
+input{
+    padding: 0.7em;
+    border: none;
+    outline: 2px solid var(--color-dark);
+    font-family: var(--font-p);
+    background-color: var(--bg-primary);
+}
+input + div{
+    position: absolute;
+    top: -0.6em;
+    left: 0.5em;
+    z-index: 2;
+    background-color: var(--bg-primary);
+    font-size: 0.8em;
+}
+.input-danger{
+    outline: 2px solid var(--color-fade-danger);
+}
+.input-danger + div{
+    color: var(--color-fade-danger);
+}
+.input-warn{
+    outline: 2px solid var(--color-fade-warn);
+}
+.input-warn + div{
+    color: var(--color-fade-warn);
+}
+.input-success{
+    outline: 2px solid var(--color-fade-success);
+}
+.input-success + div{
+    color: var(--color-fade-success);
+}
