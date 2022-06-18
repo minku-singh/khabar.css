@@ -1,7 +1,19 @@
 @font-face{
-    font-family: 'plainBlack';
-    src: url(./assets/Plain_Black_Wide.woff) format('woff'),
-         url(./assets/Plain_Black_Wide.ttf);
+    font-family: 'topSecret';
+    src: url(./assets/Top_Secret.woff) format('woff'),
+         url(./assets/Top_Secret.ttf);
+    ;
+}
+@font-face{
+    font-family: 'carbonType';
+    src: url(./assets/carbontype.woff) format('woff'),
+         url(./assets/carbontype.ttf);
+    ;
+}
+@font-face{
+    font-family: 'plainText';
+    src: url(./assets/1942.woff) format('woff'),
+         url(./assets/1942.ttf);
     ;
 }
 
@@ -28,10 +40,10 @@
     --color-fade-dark: #cccccc;
 
     /* font */
-    --font-h1: plainBlack;
-    --font-ho: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    --font-p: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    --font-size: 1.1em;
+    --font-h1: topSecret;
+    --font-ho: carbonType;
+    --font-p: plainText;
+    --font-size: 1em;
 }
 
 body{
