@@ -324,8 +324,12 @@ input + div{
 
 
 
-
-
+/* moible responsive  */
+@media screen and (max-width: 768px){
+    .toast-container{
+        padding: 0.5em 0.5em;
+    }
+}
 
 
 
