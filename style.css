@@ -159,3 +159,27 @@ h2,h3,h4,h5{
 .alert-info{
     background-color: var(--color-fade-primary);
 }
+
+/* ----------------------------------------------------- badge  */
+/* avatar with badge  */
+.badge > .avatar-presence{
+    width: auto;
+    height: auto;
+    font-size: 0.5em;
+    padding: 0.4em;
+    font-weight: bold;
+}
+.badge > .avatar-xl + .avatar-presence{
+    top: 5.3em;
+    left: 6.4em;
+}
+.badge > .avatar-lg + .avatar-presence{
+    top: 4em;
+    left: 4.6em;
+}
+.badge > .avatar-std + .avatar-presence{
+    top: 2em;
+    left: 3em;
+}
+
+/* icons with badge  */
