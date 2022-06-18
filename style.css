@@ -325,18 +325,22 @@ input + div{
 nav{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 0.5em;
     border-bottom: 2px solid var(--color-dark);
 }
 nav > ul > li{
     list-style: none;
-    margin: 0 1em;
     cursor: pointer;
+    padding: 0.4em;
 }
 nav > ul{
     display: flex;
     padding: 0.1em;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
 }
 
 
@@ -344,6 +348,12 @@ nav > ul{
 @media screen and (max-width: 768px){
     .toast-container{
         padding: 0.1em 0.3em;
+    }
+    .hamburger{
+        display: block;
+    }
+    nav > ul{
+        display: none;
     }
 }
 
