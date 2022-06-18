@@ -30,7 +30,14 @@
     /* font */
     --font-h1: plainBlack;
     --font-ho: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    --font-p: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     --font-size: 1.1em;
+}
+
+body{
+    font-family: var(--font-p);
+    font-size: var(--font-size);
+    background-color: var(--bg-primary);
 }
 
 /* black and white image */
@@ -41,14 +48,7 @@ img{
     mix-blend-mode: color-burn;
 }
 
-body{
-    font-family: var(--font-ho);
-    font-size: var(--font-size);
-    background-color: var(--bg-primary);
-}
-
 h1{
-    /* font-family: var(--font-h1); */
     font-family: var(--font-h1);
 }
 
@@ -58,10 +58,6 @@ h2,h3,h4,h5{
 
 .txt-fade{
     color: var(--font-secondary);
-}
-
-p{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .bg-primary{
