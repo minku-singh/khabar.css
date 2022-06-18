@@ -142,3 +142,20 @@ h2,h3,h4,h5{
     height: 0.7em;
 }
 
+/* ----------------------------------------------------- Alert */
+.alert{
+    padding: 1em;
+    display: inline-block;
+}
+.alert-success{
+    background-color: var(--color-fade-success);
+}
+.alert-danger{
+    background-color: var(--color-fade-danger);
+}
+.alert-warn{
+    background-color: var(--color-fade-warn);
+}
+.alert-info{
+    background-color: var(--color-fade-primary);
+}
