@@ -1,0 +1,136 @@
+@font-face{
+    font-family: 'plainBlack';
+    src: url(./assets/Plain_Black_Wide.woff) format('woff'),
+         url(./assets/Plain_Black_Wide.ttf);
+    ;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    /* ------------------------ theme ----------------------- */
+    /* color  */
+    --font-primary: #393E46;
+    --font-secondary: #929AAB;
+    --bg-primary: #EEEEEE;
+    --bg-secondary: #F7F7F7;
+    --color-primary: #00e5e5;
+    --color-fade-primary: #ccffff;
+    --color-success: #007300;
+    --color-fade-success: #cce5cc;
+    --color-danger: #e500e5;
+    --color-fade-danger: #ffccff;
+    --color-warn: #e5e500;
+    --color-fade-warn: #ffffcc;
+    --color-dark: #191919;
+    --color-fade-dark: #cccccc;
+
+    /* font */
+    --font-h1: plainBlack;
+    --font-ho: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    --font-size: 1.1em;
+}
+
+/* black and white image */
+img{
+    max-width: 100%;
+    height: auto;
+    filter: grayscale(100%) contrast(1.7) brightness(0.5) saturate(2);
+    mix-blend-mode: color-burn;
+}
+
+body{
+    font-family: var(--font-ho);
+    font-size: var(--font-size);
+    background-color: var(--bg-primary);
+}
+
+h1{
+    /* font-family: var(--font-h1); */
+    font-family: var(--font-h1);
+}
+
+h2,h3,h4,h5{
+    font-family: var(--font-ho);
+}
+
+.txt-fade{
+    color: var(--font-secondary);
+}
+
+p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.bg-primary{
+    background-color: var(--color-fade-primary);
+}
+.bg-danger{
+    background-color: var(--color-fade-danger);
+}
+.bg-warn{
+    background-color: var(--color-fade-warn);
+}
+.bg-success{
+    background-color: var(--color-fade-success);
+}
+
+/* ----------------------------------------------------------- components ------------------------------------------------ */
+/* --------------------------------------------------Avatar  */
+.avatar{
+    border-radius: 50%;
+}
+.avatar-xl{
+    width: 4em;
+    height: 4em;
+}
+.avatar-lg{
+    width: 3em;
+    height: 3em;
+}
+.avatar-std{
+    width: 2em;
+    height: 2em;
+}
+
+/* avatar with status  */
+.avatar-status{
+    position: relative;
+}
+.online{
+    background-color: var(--color-fade-success);
+}
+.offline{
+    background-color: var(--color-fade-dark);
+}
+.dnd{
+    background-color: var(--color-fade-danger);
+}
+.avatar-status > .avatar-presence{
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    border: 2px solid var(--bg-primary);
+    z-index: 2;
+}
+.avatar-xl + .avatar-presence{
+    top: 2.7em;
+    left: 3.2em;
+    width: 0.9em;
+    height: 0.9em;
+}
+.avatar-lg + .avatar-presence{
+    top: 2em;
+    left: 2.4em;
+    width: 0.8em;
+    height: 0.8em;
+}
+.avatar-std + .avatar-presence{
+    top: 1.3em;
+    left: 1.6em;
+    width: 0.7em;
+    height: 0.7em;
+}
+
