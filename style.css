@@ -89,6 +89,7 @@ h2,h3,h4,h5{
 /* --------------------------------------------------Avatar  */
 .avatar{
     border-radius: 50%;
+    display: inline-block;
 }
 .avatar-xl{
     width: 4em;
@@ -106,6 +107,7 @@ h2,h3,h4,h5{
 /* avatar with status  */
 .avatar-status{
     position: relative;
+    display: inline-block;
 }
 .online{
     background-color: var(--color-fade-success);
@@ -162,6 +164,9 @@ h2,h3,h4,h5{
 
 /* ----------------------------------------------------- badge  */
 /* avatar with badge  */
+.badge{
+    cursor: pointer;
+}
 .badge > .avatar-presence{
     width: auto;
     height: auto;
@@ -183,3 +188,10 @@ h2,h3,h4,h5{
 }
 
 /* icons with badge  */
+.badge > img.icon{
+    width: 2em;
+}
+.badge > .icon+.avatar-presence{
+    top: 0.2em;
+    left: 2.8em;
+}
