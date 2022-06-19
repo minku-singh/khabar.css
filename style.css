@@ -73,6 +73,7 @@ img{
     height: auto;
     filter: grayscale(100%) contrast(2) brightness(1) saturate(2);
     mix-blend-mode: color-burn;
+    background-color: var(--bg-secondary);
 }
 
 h1{
@@ -268,6 +269,7 @@ button{
 .icon{
     filter: grayscale(0) contrast(0) brightness(0) saturate(0);
     mix-blend-mode: darken;
+    background-color: initial;
 }
 
 /* -------------------------------------------------------- input  */
@@ -415,6 +417,22 @@ nav .list{
     border-radius: 50%;
     display: inline-block;
 }
+.img-container{
+    position: relative;
+    background-color: var(--bg-secondary);
+}
+
+/* -------------------------------------------------- video  */
+.video{
+  filter: grayscale(100%); 
+}
+
+
+
+
+
+
+
 
 /* mobile responsive  */
 @media screen and (max-width: 768px){
