@@ -406,16 +406,14 @@ nav .list{
 
 /* ------------------------------------------------------ image  */
 .img-semi-square{
-    width: 20em;
-    height: 20em;
-    border-radius: 5em;
-    display: inline-block;
+    width: 15em;
+    height: 15em;
+    border-radius: 5%;
 }
 .img-circle{
-    width: 20em;
-    height: 20em;
+    width: 15em;
+    height: 15em;
     border-radius: 50%;
-    display: inline-block;
 }
 .img-container{
     position: relative;
