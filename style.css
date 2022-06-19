@@ -302,7 +302,7 @@ input + div{
     align-items: center;
     justify-content: center;
     background-color: var(--bg-secondary);
-    padding: 0.3em 1em;
+    padding: 0.3em 0.6em;
     box-shadow: 5px 2px 5px var(--color-fade-dark);
     border-left: 2px solid var(--color-fade-dark);
     position: sticky;
@@ -313,12 +313,14 @@ input + div{
 }
 .toast-retry{
     text-decoration: none;
-    padding: 0.5em;
+    /* padding: 0.5em; */
 }
 .toast-close{
     font-size: 1.2em;
     cursor: pointer;
     color: var(--color-fade-danger);
+    padding-left: 0.3em;
+    transition: all 0.4s ease-out;
 }
 
 /* ----------------------------------------------- navigation */
@@ -329,7 +331,7 @@ nav{
     padding: 0.5em;
     border-bottom: 2px solid var(--color-dark);
 }
-nav > ul > li{
+nav li{
     list-style: none;
     cursor: pointer;
     padding: 0.4em;
@@ -342,15 +344,70 @@ nav > ul{
     display: none;
     cursor: pointer;
 }
+nav .list{
+    display: none;
+}
+
+/* ------------------------------------------------- list  */
+.list{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    max-width: 25em;
+    padding: 2em;
+}
+.list a{
+    text-decoration: none;
+    color: var(--color-dark);
+}
+.list li{
+    list-style: none;
+    padding: 0.5em 0.5em;
+    border-bottom: 1px solid var(--color-dark);
+}
 
 
-/* moible responsive  */
+
+/* mobile responsive  */
 @media screen and (max-width: 768px){
     .toast-container{
-        padding: 0.1em 0.3em;
+        padding: 0.1em 0.5em;
     }
     .hamburger{
         display: block;
+        cursor: pointer;
+        z-index: 5;
+    }
+    #hide-hamburger{
+        display: none;
+    }
+    .cross{
+        display: none;
+        cursor: pointer;
+        z-index: 5;
+    }
+    #show-cross{
+        display: block;
+    }
+    nav{
+        position: relative;
+        border: 2px solid black;
+    }
+    nav .list{
+        display: block;
+        position: absolute;
+        /* hide */
+        left: 100%; 
+        /* show  */
+        /* right: 0.3em; */
+        top: 0.4em;
+        padding: 0.1em;
+        transition: all 0.5s ease;
+    }
+    #show-list{
+        position: absolute;
+        left: 15%;
+        right: 0.3em;
     }
     nav > ul{
         display: none;
