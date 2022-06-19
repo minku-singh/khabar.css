@@ -494,15 +494,15 @@ small{
     40%{
         transform: scale(0.75);
     }
-    60%{
-        transform: scale(1);
+    /* 60%{
+        transform: scale(1.5);
     }
     80%{
         transform: scale(0.75);
     }
     100%{
         transform: scale(0.75);
-    }
+    } */
 }
 
 /* mobile responsive  */
