@@ -386,7 +386,7 @@ nav .list{
     max-height: 15em;
     overflow-y: auto;
 }
-.list a{
+a{
     text-decoration: none;
     color: var(--color-dark);
     cursor: pointer;
@@ -429,7 +429,6 @@ nav .list{
 
 /* -------------------------------------------------- modal  */
 .modal{
-    max-width: 40em;
     background-color: var(--bg-secondary);
     padding: 0.6em 0.6em;
     box-shadow: 5px 2px 5px var(--color-fade-dark);
@@ -439,6 +438,7 @@ nav .list{
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
+    min-width: 50%;
 }
 .modal-btn{
     text-align: right;
@@ -554,7 +554,18 @@ small{
         display: none;
     }
 
-    
+    .modal{
+        background-color: var(--bg-secondary);
+        padding: 0.2em 0.2em;
+        box-shadow: 5px 2px 5px var(--color-fade-dark);
+        border-left: 2px solid var(--color-dark);
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        width: 90%;
+    }
 }
 
 
