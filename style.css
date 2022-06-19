@@ -473,7 +473,37 @@ footer .dots div{
 .k{
     background-color: var(--color-fade-dark);
 }
+small{
+    display: flex;
+}
 
+.heart{
+    animation: pulse 2s infinite;
+    width: 30px;
+    height: 30px;
+    color: red;
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(0.75);
+    }
+    20%{
+        transform: scale(1);
+    }
+    40%{
+        transform: scale(0.75);
+    }
+    60%{
+        transform: scale(1);
+    }
+    80%{
+        transform: scale(0.75);
+    }
+    100%{
+        transform: scale(0.75);
+    }
+}
 
 /* mobile responsive  */
 @media screen and (max-width: 768px){
