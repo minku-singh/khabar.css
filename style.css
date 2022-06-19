@@ -383,7 +383,7 @@ nav .list{
 .list-body{
     padding: 1em 0;
     padding-right: 0.5em;
-    max-height: 10em;
+    max-height: 15em;
     overflow-y: auto;
 }
 .list a{
