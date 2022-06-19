@@ -424,7 +424,9 @@ nav .list{
 
 /* -------------------------------------------------- video  */
 .video{
-  filter: grayscale(100%); 
+    filter: grayscale(100%); 
+    display: block;
+    max-width: 100%;
 }
 
 /* -------------------------------------------------- modal  */
@@ -440,9 +442,39 @@ nav .list{
 }
 
 
-
-
-
+/* ----------------------------------------------- footer  */
+footer{
+    border-top: 2px solid var(--color-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em;
+}
+footer .dots{
+    display: flex;
+}
+footer .dot{
+    margin: 0.1em;
+}
+footer .dots div{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: var(--color-fade-danger);
+}
+.c{
+    background-color: var(--color-fade-primary);
+}
+.m{
+    background-color: var(--color-fade-danger);
+}
+.y{
+    background-color: var(--color-fade-warn);
+}
+.k{
+    background-color: var(--color-fade-dark);
+}
 
 
 /* mobile responsive  */
@@ -490,9 +522,7 @@ nav .list{
         display: none;
     }
 
-    .video{
-        max-width: 100%;
-    }
+    
 }
 
 
