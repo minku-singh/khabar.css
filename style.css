@@ -481,7 +481,6 @@ small{
     animation: pulse 2s infinite;
     width: 30px;
     height: 30px;
-    color: red;
 }
 
 @keyframes pulse{
