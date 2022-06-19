@@ -434,6 +434,11 @@ nav .list{
     padding: 0.6em 0.6em;
     box-shadow: 5px 2px 5px var(--color-fade-dark);
     border-left: 2px solid var(--color-dark);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
 }
 .modal-btn{
     text-align: right;
