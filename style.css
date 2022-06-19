@@ -320,7 +320,7 @@ input + div{
     background-color: var(--bg-secondary);
     padding: 0.3em 0.6em;
     box-shadow: 5px 2px 5px var(--color-fade-dark);
-    border-left: 2px solid var(--color-fade-dark);
+    border-left: 2px solid var(--color-dark);
     position: sticky;
     max-width: 40em;
     z-index: 5;
@@ -372,7 +372,7 @@ nav .list{
 .list{
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
+    border: 2px solid var(--color-dark);
     width: auto;
     padding: 1.5em;
 }
@@ -427,6 +427,17 @@ nav .list{
   filter: grayscale(100%); 
 }
 
+/* -------------------------------------------------- modal  */
+.modal{
+    max-width: 40em;
+    background-color: var(--bg-secondary);
+    padding: 0.6em 0.6em;
+    box-shadow: 5px 2px 5px var(--color-fade-dark);
+    border-left: 2px solid var(--color-dark);
+}
+.modal-btn{
+    text-align: right;
+}
 
 
 
@@ -477,6 +488,10 @@ nav .list{
     }
     nav > ul{
         display: none;
+    }
+
+    .video{
+        max-width: 100%;
     }
 }
 
