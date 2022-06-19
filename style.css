@@ -344,6 +344,9 @@ nav > ul{
     display: none;
     cursor: pointer;
 }
+.cross{
+    display: none;
+}
 nav .list{
     display: none;
 }
@@ -353,7 +356,7 @@ nav .list{
     display: flex;
     flex-direction: column;
     border: 2px solid black;
-    max-width: 25em;
+    /* max-width: 25em; */
     padding: 2em;
 }
 .list a{
@@ -402,7 +405,7 @@ nav .list{
         /* right: 0.3em; */
         top: 0.4em;
         padding: 0.1em;
-        transition: all 0.5s ease;
+        transition: all 0.5s ease-in;
     }
     #show-list{
         position: absolute;
