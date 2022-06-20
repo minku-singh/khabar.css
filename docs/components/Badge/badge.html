@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../styles/black-metal.css">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../docs.css">
+    <title>Badge</title>
+</head>
+<body>
+    <nav>
+        <a href="../../../index.html"><h1 class="brand">KHABAR.CSS</h1></a> 
+        <ul>
+            <a href="../../usage.html"><li>Documentation</li></a>
+            <a href="https://github.com/minku-singh/khabar.css"><li>GitHub</li></a>
+        </ul>
+        <img class="icon hamburger" src="https://img.icons8.com/dotty/80/undefined/xbox-menu.png"/>
+        <img class="icon cross" src="https://img.icons8.com/dotty/80/undefined/filled-cancel.png"/>
+        <ul class="list">
+            <div class="list-head"><h3>Getting Started</h3></div>
+            <div class="list-body">
+                <a><li>Usage</li></a>
+            </div>
+
+            <div class="list-head"><h3>Components</h3></div>
+            <div class="list-body">
+                <a><li>Alert</li></a>
+                <a class="list-active" href="#"><li>Avatar</li></a>
+                <a href="#"><li>Badge</li></a>
+                <a href="#"><li>Button</li></a>
+                <a href="#"><li>Card</li></a>
+                <a href="#"><li>Image</li></a>
+                <a href="#"><li>Input</li></a>
+                <a href="#"><li>List</li></a>
+                <a href="#"><li>Navigation</li></a>
+                <a href="#"><li>Sidebar</li></a>
+                <a href="#"><li>Toast</li></a>
+            </div>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <ul class="sidebar">
+            <div class="sidebar-head"><h3>Getting Started</h3></div>
+            <div class="sidebar-body">
+                <a href="./../../usage.html"><li>Usage</li></a>
+            </div>
+
+            <div class="sidebar-head"><h3>Components</h3></div>
+            <div class="sidebar-body">
+                <a><li>Alert</li></a>
+                <a href="#"><li>Avatar</li></a>
+                <a href="#"><li class="sidebar-active">Badge</li></a>
+                <a href="#"><li>Button</li></a>
+                <a href="#"><li>Card</li></a>
+                <a href="#"><li>Image</li></a>
+                <a href="#"><li>Input</li></a>
+                <a href="#"><li>List</li></a>
+                <a href="#"><li>Navigation</li></a>
+                <a href="#"><li>Sidebar</li></a>
+                <a href="#"><li>Toast</li></a>
+            </div>
+        </ul>
+
+        <!--------------------------- changing  ---------------------------------->
+        <main>
+            <article>
+                <h2>Badge</h2>
+                <p>Label the data associated with the component.</p>
+
+                <h3>Avatars with badge</h3>
+                <p>Avatars are labelled with their corresponding data.</p>
+                <div class="component-wrapper">
+                    <div class="avatar-status badge">
+                        <img class="avatar avatar-xl" src="../../../assets/images/avatar-dhoni.jpg" alt="dhoni">
+                        <div class="avatar-presence dnd">1</div>
+                    </div>
+                    <div class="avatar-status badge">
+                        <img class="avatar avatar-lg" src="../../../assets/images/avatar-dhoni.jpg" alt="dhoni">
+                        <div class="avatar-presence online">5</div>
+                    </div>
+                    <div class="avatar-status badge">
+                        <img class="avatar avatar-std" src="../../../assets/images/avatar-dhoni.jpg" alt="dhoni">
+                        <div class="avatar-presence offline">52</div>
+                    </div>
+                </div>
+
+                <div class="code-snippet">
+                    <pre>
+                        <code class="language-html">
+&lt;div class="avatar-status badge"&gt;
+    &lt;img class="avatar avatar-xl" src="..." alt="..."&gt;
+    &lt;div class="avatar-presence dnd"&gt;1&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="avatar-status badge"&gt;
+    &lt;img class="avatar avatar-lg" src="..." alt="..."&gt;
+    &lt;div class="avatar-presence online"&gt;5&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="avatar-status badge"&gt;
+    &lt;img class="avatar avatar-std" src="..." alt="..."&gt;
+    &lt;div class="avatar-presence offline"&gt;52&lt;/div&gt;
+&lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+
+                <h3>Icons with badge</h3>
+                <p>Icons are labelled with their corresponding data.</p>
+                <div class="component-wrapper">
+                    <div class="avatar-status badge">
+                        <img class="icon" src="https://img.icons8.com/dotty/80/undefined/mail.png"/>
+                        <div class="avatar-presence dnd">11</div>
+                    </div>
+                    <div class="avatar-status badge">
+                        <img class="icon" src="https://img.icons8.com/dotty/80/undefined/shopping-cart.png"/>
+                        <div class="avatar-presence online">1</div>
+                    </div>
+                    <div class="avatar-status badge">
+                        <img class="icon" src="https://img.icons8.com/dotty/80/undefined/whatsapp.png"/>
+                        <div class="avatar-presence offline">23</div>
+                    </div>
+                </div>
+
+                <div class="code-snippet">
+                    <pre>
+                        <code class="language-html">
+&lt;div class="avatar-status badge"&gt;
+    &lt;img class="icon" src="..."/&gt;
+    &lt;div class="avatar-presence dnd"&gt;11&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="avatar-status badge"&gt;
+    &lt;img class="icon" src="..."/&gt;
+    &lt;div class="avatar-presence online"&gt;1&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="avatar-status badge"&gt;
+    &lt;img class="icon" src="..."/&gt;
+    &lt;div class="avatar-presence offline"&gt;23&lt;/div&gt;
+&lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+            </article>
+
+            <div class="item-btn">
+                <a href="../Avatar/avatar.html"><button class="btn-primary">&lt; Avatar </button></a>
+                <a href="../Button/button.html"><button class="btn-primary"> Button &gt; </button></a> 
+            </div>
+        </main>
+        <!-- ------------------------------------------------------------------------------>
+    
+    </div>
+
+    <footer>
+        <small> &copy;2022 Khabar.css </small> 
+        <small><a title="Minku's GitHub" href="https://github.com/minku-singh"> - Minku Singh</a> <div class="heart">🖤</div></small> 
+        <div class="dots">
+            <div class="dot c"></div>
+            <div class="dot m"></div>
+            <div class="dot y"></div>
+            <div class="dot k"></div>
+        </div>
+    </footer>
+
+    <script src="../../../javascript/highlight.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <script src="../../../javascript/script.js"></script>
+</body>
+</html>
