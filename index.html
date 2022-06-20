@@ -4,266 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./styles/black-metal.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Khabar.css</title>
+    <script src="./javascript/script.js" defer></script>
 </head>
 <body>
-    <p>FONT UTILS</p>
-    <h1>Khabar.css</h1>
-
-    <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-    <h4>Heading 4</h4>
-    <h5>Heading 5</h5>
-
-    <p>I am a paragraph. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque autem magnam nulla corrupti placeat voluptates magni veritatis officiis voluptate temporibus.</p>
-    <p class = "txt-fade">Fade Out text</p>
-
-    <hr>
-
-    <p>COLOR</p>
-    <p class="bg-primary">I have primary background</p>
-    <p class="bg-danger">I have danger background</p>
-    <p class="bg-success">I have success background</p>
-    <p class="bg-warn">I have warn background</p>
-
-    <hr>
-    <p>AVATAR</p>
-    <img class="avatar avatar-xl" src="./assets/images/avatar-dhoni.jpg" alt="dhoni">
-    <img class="avatar avatar-lg" src="./assets/images/avatar-dhoni.jpg" alt="dhoni">
-    <img class="avatar avatar-std" src="./assets/images/avatar-dhoni.jpg" alt="dhoni">
-
-    
-    <div class="avatar-status">
-        <img class="avatar avatar-xl" src="./assets/images/avatar-dhoni.jpg" alt="dhoni">
-        <div class="avatar-presence offline"></div>
-    </div>
-    <div class="avatar-status">
-        <img class="avatar avatar-lg" src="./assets/images/avatar-dhoni.jpg" alt="dhoni">
-        <div class="avatar-presence dnd"></div>
-    </div>
-    <div class="avatar-status">
-        <img class="avatar avatar-std" src="./assets/images/avatar-dhoni.jpg" alt="dhoni">
-        <div class="avatar-presence online"></div>
-    </div>
-
-    <hr>
-
-    <p>ALERT</p>
-    <p class="alert alert-success">A simple success alert!!</p>
-    <p class="alert alert-warn">A simple warning alert!!</p>
-    <p class="alert alert-danger">A simple danger alert!!</p>
-    <p class="alert alert-info">A simple info alert!!</p>
-
-    <hr>
-
-    <p>CHIP</p>
-    <p class="chip">chip</p>
-    <div class="chip chip-icon">
-        <span>chip</span>
-        <span class="close">X</span>
-    </div>
-
-    <hr>
-
-    <p>BADGE</p>
-    <div class="avatar-status badge">
-        <img class="avatar avatar-xl" src="./assets/images/avatar-dhoni.jpg" alt="dhoni">
-        <div class="avatar-presence dnd">1</div>
-    </div>
-    <div class="avatar-status badge">
-        <img class="avatar avatar-lg" src="./assets/images/avatar-dhoni.jpg" alt="dhoni">
-        <div class="avatar-presence online">5</div>
-    </div>
-    <div class="avatar-status badge">
-        <img class="avatar avatar-std" src="./assets/images/avatar-dhoni.jpg" alt="dhoni">
-        <div class="avatar-presence offline">52</div>
-    </div>
-
-    <!-- link to suggest to use icons from here - https://icons8.com/icon/set/whatsapp/dotty--black -->
-    <div class="avatar-status badge">
-        <img class="icon" src="https://img.icons8.com/dotty/80/undefined/mail.png"/>
-        <div class="avatar-presence dnd">11</div>
-    </div>
-    <div class="avatar-status badge">
-        <img class="icon" src="https://img.icons8.com/dotty/80/undefined/shopping-cart.png"/>
-        <div class="avatar-presence online">1</div>
-    </div>
-    <div class="avatar-status badge">
-        <img class="icon" src="https://img.icons8.com/dotty/80/undefined/whatsapp.png"/>
-        <div class="avatar-presence offline">23</div>
-    </div>
-
-    <hr>
-
-    <p>BUTTON</p>
-    <button class="btn-primary" type="button">Primary</button>
-    <button class="btn-success" type="button">Success</button>
-    <button class="btn-danger" type="button">Danger</button>
-    <button class="btn-warn" type="button">Warn</button>
-
-    <button class="btn-outline-primary" type="button">Primary</button>
-    <button class="btn-outline-success" type="button">Success</button>
-    <button class="btn-outline-danger" type="button">Danger</button>
-    <button class="btn-outline-warn" type="button">Warn</button>
-
-    <button class="btn-success btn-icon" type="button">
-        <img class="icon" src="https://img.icons8.com/dotty/80/undefined/shopping-cart.png"/>
-        <span>Add to Cart</span>
-    </button>
-    <button class="btn-danger btn-icon" type="button">
-        <img class="icon" src="https://img.icons8.com/dotty/80/undefined/delete.png"/>
-        <span>Delete</span>
-    </button>
-
-    <hr>
-
-    <p>INPUT</p>
-    <div class="input">
-        <input type="text">
-        <div>Label</div>
-    </div>
-
-    <div class="input">
-        <input class="input-danger" type="text">
-        <div>Label</div>
-    </div>
-    <div class="input">
-        <input class="input-warn" type="text">
-        <div>Label</div>
-    </div>
-    <div class="input">
-        <input class="input-success" type="text">
-        <div>Label</div>
-    </div>
-
-    <hr>
-
-    <p>TOAST</p>
-    <div style="height: 30em; width: 100%; border: 2px solid black;">
-        <div class="toast">
-            <p class="toast-content">Couldn't submit the file. Retry in 5 seconds.</p>
-            <a href="#" class="toast-retry">RETRY</a>
-            <div class="toast-close"><img class="icon" src="https://img.icons8.com/dotty/80/undefined/filled-cancel.png"/></div>
-        </div>
-    </div>
-
-    <hr>
-
-    <p>CARD</p>
-    <div class = "card">
-        <img class="card-img" src="./assets/images/avatar-dhoni.jpg" alt="dhoni"/>
-        <!-- <img class="card-img" src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1200,q_50/lsci/db/PICTURES/CMS/339600/339696.jpg" alt=""> -->
-        
-        <div class="card-text">
-            <a href="">
-                <h3 class="card-heading">
-                    MS Dhoni and the guilds
-                </h3>
-            </a>
-            <h5 class="card-sub-heading">by MS Anokha</h5>
-            <p class="card-para">MS has been ... Lorem ipsum rchitecto dolorum enim impedit assumenda tenetur!</p>
-            <div class="card-price">
-                <span class="price">₹237</span>
-                <span class="price-original"><strike>₹499</strike></span>
-            </div>
-        </div>
-        <button class="card-icon">
-            <img class="icon" src="https://img.icons8.com/dotty/80/undefined/hearts.png"/>
-            <!-- <i class="fa-solid fa-heart icon"></i> -->
-        </button>
-    </div>
-
-    <hr>
-
-    <p>NAVIGATION</p>
     <nav>
         <h1 class="brand">KHABAR.CSS</h1>
         <ul>
-            <a><li>lorem</li></a>
-            <a><li>lorem</li></a>
-            <a><li>lorem</li></a>
+            <a><li>Documentation</li></a>
+            <a><li>GitHub</li></a>
         </ul>
         <img class="icon hamburger" src="https://img.icons8.com/dotty/80/undefined/xbox-menu.png"/>
         <img class="icon cross" src="https://img.icons8.com/dotty/80/undefined/filled-cancel.png"/>
         <ul class="list">
-            <div class="list-head"><h2>Heading</h2></div>
+            <div class="list-head"><h2>Links</h2></div>
             <div class="list-body">
-                <a href="#"><li class="list-active">Active Link</li></a>
-                <a><li>Ipsum</li></a>
-                <a><li>Ipsum</li></a>
-                <a><li>Ipsum</li></a>
-                <a><li>Ipsum</li></a>
-                <a><li>Ipsum</li></a>
-                <a><li>Ipsum</li></a>
-                <a><li>Ipsum</li></a>
-                <a><li>Ipsum</li></a>
+                <a href="#"><li class="list-active">Documentation</li></a>
+                <a><li>GitHub</li></a>
             </div>
         </ul>
     </nav>
 
-    <hr>
+    <div class="container" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 77vh;">
+        <!-- <h1>Khabar.css</h1> -->
+        <h2>A lightweight CSS library to build Newspaper style UI</h2>
+        <p>latest version: 1.0.0</p>
+        <ul>
+            <li><h5 style="display: inline;">Dependency free:</h5> Khabar.css is Vanilla CSS which needs no depedency</li>
+            <li><h5 style="display: inline;">Responsive:</h5> Makes sure that components look good on every screen size</li>
+            <li><h5 style="display: inline;">Unique Style:</h5> Build uniquely styled UI which looks like a newspaper</li>
+        </ul>
 
-    <p>LIST</p>
-    <ul class="list list-global">
-        <div class="list-head"><h2>Heading</h2></div>
-        <div class="list-body">
-            <a><li class="list-active">Active Link</li></a>
-            <a><li>Ipsum</li></a>
-            <a><li>Ipsum</li></a>
-            <a><li>Ipsum</li></a>
-            <a><li>Ipsum</li></a>
-            <a href="#"><li>Ipsum</li></a>
-            <a href="#"><li>Ipsum</li></a>
-            <a href="#"><li>Ipsum</li></a>
-            <a href="#"><li>Ipsum</li></a>
+        <div style="display: flex;">
+            <button class="btn-primary" type="button">Get Started</button>
+            <button style="min-width: 8em;" class="btn-outline-primary" type="button">Github</button>
         </div>
-    </ul>
 
-    <hr>
-
-    <!-- <p>MODAL</p>
-    <div style="height: 30em; width: 100%; border: 2px solid black;"></div>
-        <div class="modal">
-            <h3>Lorem ipsum dolor sit amet.</h3>
-            <p>Lorem ipsum dolor, sit amet conse.</p>
-            <div class="modal-btn">
-                <button class="btn-primary">Cancel</button>
-                <button class = "btn-danger">Delete</button>
-            </div>
-        </div>
-    </div> -->
-
-    <hr>
-
-    <p>IMAGE</p>
-    <img src="./assets/images/avatar-dhoni.jpg" alt="dhoni">
-    <div style="max-width: 20em; height: auto;">
-        <img src="./assets/images/avatar-dhoni.jpg" alt="dhoni" class="img-square">
-    </div>
-    <div style="max-width: 20em; height: auto;">
-        <img src="./assets/images/avatar-dhoni.jpg" alt="dhoni" class="img-circle">
     </div>
 
-    <!-- not working in mobile  -->
-    <!-- <p>VIDEO</p>
-    <iframe class="video" width="640" height="360" src="http://www.espn.in/core/video/iframe?id=25073842&endcard=false" allowfullscreen frameborder="0"></iframe> -->
-
-    <p>CODE</p>
-    <div style="max-width: fit-content;">
-        <pre><code class="language-css">
-.box {
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    border-radius: 10px;
-}
-        </code>
-        </pre>
-    </div>
-
-    <p>FOOTER</p>
     <footer>
         <small> &copy;2022 Khabar.css by<a title="Minku's GitHub" href="https://github.com/minku-singh"> Minku Singh</a> <div class="heart">🖤</div></small>
         <div class="dots">
@@ -273,11 +52,5 @@
             <div class="dot k"></div>
         </div>
     </footer>
-
-    <script src="./javascript/highlight.js"></script>
-    <script>
-        hljs.highlightAll();
-    </script>
-    <script src="./javascript/script.js"></script>
 </body>
 </html>

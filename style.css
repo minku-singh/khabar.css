@@ -67,6 +67,13 @@ body{
     color: var(--color-dark);
 }
 
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: auto;
+}
+
 /* black and white image */
 img{
     max-width: 100%;
@@ -233,9 +240,14 @@ button{
     font-family: var(--font-p);
     cursor: pointer;
     display: inline-block;
+    max-width: fit-content;
+    min-width: fit-content;
+    margin: 5px;
 }
 .btn-primary{
-    background-color: var(--color-fade-primary);
+    /* background-color: var(--color-fade-primary); */
+    background-color: var(--color-dark);
+    color: var(--bg-secondary);
 }
 .btn-danger{
     background-color: var(--color-fade-danger);
@@ -249,10 +261,11 @@ button{
 
 /* outline button  */
 .btn-outline-primary{
-    border: 2px solid var(--color-fade-primary);
+    border: 2px solid var(--color-dark);
 }
 .btn-outline-primary:hover{
-    background: var(--color-fade-primary);
+    background: var(--color-dark);
+    color: var(--bg-secondary);
 }
 .btn-outline-danger{
     border: 2px solid var(--color-fade-danger);
@@ -358,7 +371,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5em;
+    padding: 0.1em;
     border-bottom: 2px solid var(--color-dark);
     z-index: 10;
 }
@@ -377,9 +390,13 @@ nav > ul{
 }
 .cross{
     display: none;
+    margin: 0.2em;
 }
 nav .list{
     display: none;
+}
+nav a{
+    text-decoration: underline;
 }
 
 /* --------------------------------------------------- card  */
@@ -507,7 +524,10 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0.5em;
+    padding: 0.1em;
+    /* position: absolute; */
+    bottom: 0;
+    width: 98%;
 }
 footer .dots{
     display: flex;
@@ -516,8 +536,8 @@ footer .dot{
     margin: 0.1em;
 }
 footer .dots div{
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     color: var(--color-fade-danger);
 }
@@ -592,11 +612,14 @@ small{
     }
     nav .list{
         position: absolute;
-        top: 0.4em;
+        top: 0.2em;
         padding: 0.6em;
         transition: all 0.5s ease-in;
         z-index: 2;
         background-color: var(--bg-primary);
+    }
+    nav a{
+        text-decoration: none;
     }
     .hide-list{
         display: none;
