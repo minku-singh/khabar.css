@@ -23,6 +23,7 @@
     /* firefox scrollbar  */
     scrollbar-width: 12px;
     scrollbar-color: var(--color-dark);
+    margin-top: 0;
 }
 /* scrollbar other browser */
 *::-webkit-scrollbar{
@@ -382,6 +383,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 0.1em;
+    padding-top: 1.5em;
     border-bottom: 2px solid var(--color-dark);
     z-index: 10;
     position: fixed;

@@ -1,16 +1,36 @@
+:root{
+    --bg-secondary: #F7F7F7;
+}
+
 main{
     margin-left: 2em;
     max-width: 80%;
     margin-right: 2em;
+    margin-bottom: 1em;
 }
 
 main p{
     line-height: 1.2em;
 }
 
+/* main > button{
+    margin-left: 80%;
+} */
+
+
+.item-btn{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+}
 .container{
     display: flex;
-    padding-top: 5em;
+    padding-top: 7em;
+}
+
+.component-wrapper{
+    background-color: var(--bg-secondary);
+    padding: 1em;
 }
 
 @media screen and (max-width: 768px){
@@ -19,5 +39,8 @@ main p{
         margin-right: initial;
         max-width: 100%;
         height: auto;
+    }
+    .container{
+        padding-top: 2em;
     }
 }
