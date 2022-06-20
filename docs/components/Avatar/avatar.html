@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../styles/black-metal.css">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../docs.css">
+    <title>Avatar</title>
+</head>
+<body>
+    <nav>
+        <a href="../../../index.html"><h1 class="brand">KHABAR.CSS</h1></a> 
+        <ul>
+            <a href="../../usage.html"><li>Documentation</li></a>
+            <a href="https://github.com/minku-singh/khabar.css"><li>GitHub</li></a>
+        </ul>
+        <img class="icon hamburger" src="https://img.icons8.com/dotty/80/undefined/xbox-menu.png"/>
+        <img class="icon cross" src="https://img.icons8.com/dotty/80/undefined/filled-cancel.png"/>
+        <ul class="list">
+            <div class="list-head"><h3>Getting Started</h3></div>
+            <div class="list-body">
+                <a><li>Usage</li></a>
+            </div>
+
+            <div class="list-head"><h3>Components</h3></div>
+            <div class="list-body">
+                <a><li>Alert</li></a>
+                <a class="list-active" href="#"><li>Avatar</li></a>
+                <a href="#"><li>Badge</li></a>
+                <a href="#"><li>Button</li></a>
+                <a href="#"><li>Card</li></a>
+                <a href="#"><li>Image</li></a>
+                <a href="#"><li>Input</li></a>
+                <a href="#"><li>List</li></a>
+                <a href="#"><li>Navigation</li></a>
+                <a href="#"><li>Sidebar</li></a>
+                <a href="#"><li>Toast</li></a>
+            </div>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <ul class="sidebar">
+            <div class="sidebar-head"><h3>Getting Started</h3></div>
+            <div class="sidebar-body">
+                <a href="./../../usage.html"><li>Usage</li></a>
+            </div>
+
+            <div class="sidebar-head"><h3>Components</h3></div>
+            <div class="sidebar-body">
+                <a><li>Alert</li></a>
+                <a href="#"><li class="sidebar-active">Avatar</li></a>
+                <a href="#"><li>Badge</li></a>
+                <a href="#"><li>Button</li></a>
+                <a href="#"><li>Card</li></a>
+                <a href="#"><li>Image</li></a>
+                <a href="#"><li>Input</li></a>
+                <a href="#"><li>List</li></a>
+                <a href="#"><li>Navigation</li></a>
+                <a href="#"><li>Sidebar</li></a>
+                <a href="#"><li>Toast</li></a>
+            </div>
+        </ul>
+
+        <!--------------------------- changing  ---------------------------------->
+        <main>
+            <article>
+                <h2>Avatar</h2>
+                <p>Display user's profile picture with Avatar.</p>
+
+                <h3>Standard Avatar</h3>
+                <p>The Avatar component is available in 3 sizes <span class="variant">avatar-xl</span>, <span class="variant">avatar-lg</span> and  <span class="variant">avatar-std</span>.</p>
+                <div class="component-wrapper">
+                    <img class="avatar avatar-xl" src="../../../assets/images/avatar-dhoni.jpg" alt="dhoni">
+                    <img class="avatar avatar-lg" src="../../../assets/images/avatar-dhoni.jpg" alt="dhoni">
+                    <img class="avatar avatar-std" src="../../../assets/images/avatar-dhoni.jpg" alt="dhoni">
+                </div>
+
+                <div class="code-snippet">
+                    <pre>
+                        <code class="language-html">
+&lt;p&gt; class="alert alert-success">A simple success alert!!&lt;/p&gt;
+&lt;p&gt; class="alert alert-warn">A simple warning alert!!&lt;/p&gt;
+&lt;p&gt; class="alert alert-danger">A simple danger alert!!&lt;/p&gt;
+&lt;p&gt; class="alert alert-info">A simple info alert!!&lt;/p&gt;
+                        </code>
+                    </pre>
+                </div>
+
+                <h3>Avatar with status</h3>
+                <p>Avatar supports status indicators for <span class="variant">offline</span>, <span class="variant">dnd</span> and <span class="variant">online</span>.</p>
+                <div class="component-wrapper">
+                    <div class="avatar-status">
+                        <img class="avatar avatar-xl" src="../../../assets/images/avatar-dhoni.jpg" alt="dhoni">
+                        <div class="avatar-presence offline"></div>
+                    </div>
+                    <div class="avatar-status">
+                        <img class="avatar avatar-lg" src="../../../assets/images/avatar-dhoni.jpg" alt="dhoni">
+                        <div class="avatar-presence dnd"></div>
+                    </div>
+                    <div class="avatar-status">
+                        <img class="avatar avatar-std" src="../../../assets/images/avatar-dhoni.jpg" alt="dhoni">
+                        <div class="avatar-presence online"></div>
+                    </div>
+                </div>
+
+                <div class="code-snippet">
+                    <pre>
+                        <code class="language-html">
+&lt;div class="avatar-status"&gt;
+    &lt;img class="avatar avatar-xl" src="..." alt="..."&gt;
+    &lt;div class="avatar-presence offline"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="avatar-status"&gt;
+    &lt;img class="avatar avatar-lg" src="..." alt="..."&gt;
+    &lt;div class="avatar-presence dnd"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="avatar-status"&gt;
+    &lt;img class="avatar avatar-std" src="..." alt="..."&gt;
+    &lt;div class="avatar-presence online"&gt;&lt;/div&gt;
+&lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+            </article>
+
+            <div class="item-btn">
+                <a href="../Alert/alert.html"><button class="btn-primary">&lt; Alert </button></a>
+                <a href="../Badge/badge.html"><button class="btn-primary"> Badge &gt; </button></a> 
+            </div>
+        </main>
+        <!-- ------------------------------------------------------------------------------>
+    
+    </div>
+
+    <footer>
+        <small> &copy;2022 Khabar.css </small> 
+        <small><a title="Minku's GitHub" href="https://github.com/minku-singh"> - Minku Singh</a> <div class="heart">🖤</div></small> 
+        <div class="dots">
+            <div class="dot c"></div>
+            <div class="dot m"></div>
+            <div class="dot y"></div>
+            <div class="dot k"></div>
+        </div>
+    </footer>
+
+    <script src="../../../javascript/highlight.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <script src="../../../javascript/script.js"></script>
+</body>
+</html>
