@@ -652,11 +652,12 @@ small{
         display: block;
     }
     nav{
-        position: relative;
+        /* position: relative; */
+        position: fixed;
     }
     nav .list{
         position: absolute;
-        top: 0.2em;
+        top: 1.9em;
         padding: 0.6em;
         transition: all 0.5s ease-in;
         z-index: 2;
