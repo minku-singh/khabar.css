@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Khabar.css</title>
 </head>
@@ -109,8 +110,6 @@
 
     <hr>
 
-    <!-- <p>RESPONSIVE IMAGE</p>
-    <img src="./assets/images/avatar-dhoni.jpg" alt="dhoni"> -->
     <p>INPUT</p>
     <div class="input">
         <input type="text">
@@ -134,11 +133,37 @@
 
     <p>TOAST</p>
     <div style="height: 30em; width: 100%; border: 2px solid black;">
-        <div class="toast-container">
+        <div class="toast">
             <p class="toast-content">Couldn't submit the file. Retry in 5 seconds.</p>
             <a href="#" class="toast-retry">RETRY</a>
             <div class="toast-close"><img class="icon" src="https://img.icons8.com/dotty/80/undefined/filled-cancel.png"/></div>
         </div>
+    </div>
+
+    <hr>
+
+    <p>CARD</p>
+    <div class = "card">
+        <img class="card-img" src="./assets/images/avatar-dhoni.jpg" alt="dhoni"/>
+        <!-- <img class="card-img" src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1200,q_50/lsci/db/PICTURES/CMS/339600/339696.jpg" alt=""> -->
+        
+        <div class="card-text">
+            <a href="">
+                <h3 class="card-heading">
+                    Harry Potter and the Sorcerer's Stone
+                </h3>
+            </a>
+            <h5 class="card-sub-heading">by J.K Rowling</h5>
+            <p class="card-para">Harry Potter's life is... Lorem ipsum rchitecto dolorum enim impedit assumenda tenetur!</p>
+            <div class="card-price">
+                <span class="price">₹237</span>
+                <span class="price-original"><strike>₹499</strike></span>
+            </div>
+        </div>
+        <button class="card-icon">
+            <!-- <img class="icon" src="https://img.icons8.com/dotty/80/undefined/hearts.png"/> -->
+            <i class="fa-solid fa-heart icon"></i>
+        </button>
     </div>
 
     <hr>
@@ -189,27 +214,32 @@
 
     <hr>
 
-    <p>MODAL</p>
-    <div class="modal">
-        <h3>Lorem ipsum dolor sit amet.</h3>
-        <p>Lorem ipsum dolor, sit amet conse.</p>
-        <div class="modal-btn">
-            <button class="btn-primary">Cancel</button>
-            <button class = "btn-danger">Delete</button>
+    <!-- <p>MODAL</p>
+    <div style="height: 30em; width: 100%; border: 2px solid black;"></div>
+        <div class="modal">
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <p>Lorem ipsum dolor, sit amet conse.</p>
+            <div class="modal-btn">
+                <button class="btn-primary">Cancel</button>
+                <button class = "btn-danger">Delete</button>
+            </div>
         </div>
-    </div>
+    </div> -->
 
     <hr>
 
     <p>IMAGE</p>
     <img src="./assets/images/avatar-dhoni.jpg" alt="dhoni">
-    <img src="./assets/images/avatar-dhoni.jpg" alt="dhoni" class="img-semi-square">
-    <img src="./assets/images/avatar-dhoni.jpg" alt="dhoni" class="img-circle">
+    <div style="max-width: 20em; height: auto;">
+        <img src="./assets/images/avatar-dhoni.jpg" alt="dhoni" class="img-square">
+    </div>
+    <div style="max-width: 20em; height: auto;">
+        <img src="./assets/images/avatar-dhoni.jpg" alt="dhoni" class="img-circle">
+    </div>
 
     <!-- not working in mobile  -->
     <!-- <p>VIDEO</p>
     <iframe class="video" width="640" height="360" src="http://www.espn.in/core/video/iframe?id=25073842&endcard=false" allowfullscreen frameborder="0"></iframe> -->
-
 
     <p>FOOTER</p>
     <footer>

@@ -266,7 +266,7 @@ button{
     justify-content: space-around;
     align-items: center;
 }
-.icon{
+i, .icon{
     filter: grayscale(0) contrast(0) brightness(0) saturate(0);
     mix-blend-mode: darken;
     background-color: initial;
@@ -313,7 +313,7 @@ input + div{
 }
 
 /* ----------------------------------------------- toast  */
-.toast-container{
+.toast{
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -368,6 +368,50 @@ nav .list{
     display: none;
 }
 
+/* --------------------------------------------------- card  */
+.card{
+    max-width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border: 2px solid var(--color-dark); 
+    padding: 0.5em;
+    cursor: pointer;
+    position: relative;
+}
+.card:hover{
+    box-shadow: 5px 2px 5px var(--color-fade-dark);
+}
+.card-img{
+    max-width: 60%;
+    margin: auto;
+    /* height: fit-content; */
+    max-height: 20em;
+}
+.card-text{
+    margin: 0 1em;
+}
+.card-icon{
+    min-width: 35px;
+    width: 40px;
+    /* background-color: var(--bg-primary); */
+    border-radius: 10px;
+    padding: 3px;
+    position: absolute;
+    right: 0.5em;
+    top: 0.5em;
+    background-color: rgba(226, 226, 226, 0.5);
+}
+.card-icon:hover{
+    background-color: var(--bg-secondary);
+}
+.card-icon .icon{
+    width: 80%;
+    font-size: 1.2rem;
+}
+
+
+
 /* ------------------------------------------------- list  */
 .list{
     display: flex;
@@ -405,19 +449,12 @@ a{
 }
 
 /* ------------------------------------------------------ image  */
-.img-semi-square{
-    width: 15em;
-    height: 15em;
-    border-radius: 5%;
+.img-square{
+    /* clip-path: polygon(10% 10%, 80% 10%, 80% 90%, 10% 90%); */
+    clip-path: inset(5% 20% 15% 10%);
 }
 .img-circle{
-    width: 15em;
-    height: 15em;
-    border-radius: 50%;
-}
-.img-container{
-    position: relative;
-    background-color: var(--bg-secondary);
+    clip-path: circle();
 }
 
 /* -------------------------------------------------- video  */
@@ -429,16 +466,20 @@ a{
 
 /* -------------------------------------------------- modal  */
 .modal{
+    /* display: inline-flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
     background-color: var(--bg-secondary);
-    padding: 0.6em 0.6em;
+    padding: 0.3em 0.6em;
     box-shadow: 5px 2px 5px var(--color-fade-dark);
     border-left: 2px solid var(--color-dark);
     position: fixed;
+    /* max-width: 40em; */
+    width: fit-content;
+    z-index: 5;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 10;
-    min-width: 50%;
 }
 .modal-btn{
     text-align: right;
@@ -514,6 +555,8 @@ small{
     .toast-container{
         padding: 0.1em 0.5em;
     }
+
+    /* nav  */
     .hamburger{
         display: block;
         cursor: pointer;
@@ -554,6 +597,7 @@ small{
         display: none;
     }
 
+    /* modal  */
     .modal{
         background-color: var(--bg-secondary);
         padding: 0.2em 0.2em;
@@ -565,6 +609,25 @@ small{
         transform: translate(-50%, -50%);
         z-index: 10;
         width: 90%;
+    }
+
+    /* card  */
+    .card{
+        max-width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        border: 2px solid var(--color-dark); 
+        padding: 0.5em;
+        cursor: pointer;
+        position: relative;
+    }
+    .card-img{
+        max-width: 100%;
+        margin: auto;
+        /* height: fit-content; */
+        max-height: 20em;
     }
 }
 
