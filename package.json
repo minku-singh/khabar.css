@@ -1,0 +1,27 @@
+{
+  "name": "khabar.css",
+  "version": "1.0.0",
+  "description": "A CSS library for creating \"newspaper style\" UI",
+  "main": "style.css",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minku-singh/khabar.css.git"
+  },
+  "keywords": [
+    "css-library",
+    "retro",
+    "newspaper"
+  ],
+  "author": "Minku Singh <mailminkusingh@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/minku-singh/khabar.css/issues"
+  },
+  "homepage": "https://github.com/minku-singh/khabar.css#readme"
+}

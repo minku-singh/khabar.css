@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/black-metal.css">
     <title>Khabar.css</title>
 </head>
 <body>
@@ -250,9 +250,22 @@
     <!-- <p>VIDEO</p>
     <iframe class="video" width="640" height="360" src="http://www.espn.in/core/video/iframe?id=25073842&endcard=false" allowfullscreen frameborder="0"></iframe> -->
 
+    <p>CODE</p>
+    <div>
+        <pre><code class="language-css">
+          .box {
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            border-radius: 10px;
+          }
+        </code>
+        </pre>
+    </div>
+
     <p>FOOTER</p>
     <footer>
-        <small> &copy;2022 Khabar.css by<a href="https://github.com/minku-singh"> Minku Singh</a> <div class="heart">🖤</div></small>
+        <small> &copy;2022 Khabar.css by<a title="Minku's GitHub" href="https://github.com/minku-singh"> Minku Singh</a> <div class="heart">🖤</div></small>
         <div class="dots">
             <div class="dot c"></div>
             <div class="dot m"></div>
@@ -261,6 +274,10 @@
         </div>
     </footer>
 
-    <script src="./script.js" defer></script>
+    <script src="./javascript/highlight.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <script src="./script.js"></script>
 </body>
 </html>
