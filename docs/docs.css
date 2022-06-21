@@ -1,5 +1,22 @@
 :root{
     --bg-secondary: #F7F7F7;
+    --color-dark: #191919;
+}
+
+.home {
+    font-size: 1.1em;
+    padding-left: 7em;
+    padding-right: 7em;
+    text-align: center;
+}
+.home h2{
+    margin-bottom: 2em;
+}
+
+.home .newspaper{
+    background-color: var(--color-dark);
+    color: var(--bg-secondary);
+    padding: 0.2em;
 }
 
 main{
@@ -54,6 +71,10 @@ body > nav{
         margin-right: initial;
         max-width: 100%;
         height: auto;
+    }
+    .home{
+        padding-left: initial;
+        padding-right: initial;
     }
     
 }

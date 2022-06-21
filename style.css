@@ -574,6 +574,7 @@ footer{
     bottom: 0;
     width: 98%;
     background-color: var(--bg-primary);
+    margin-top: 2em;
 }
 footer .dots{
     display: flex;
@@ -713,6 +714,10 @@ small{
         margin: auto;
         /* height: fit-content; */
         max-height: 20em;
+    }
+
+    footer{
+        margin-top: 5em;
     }
 }
 
