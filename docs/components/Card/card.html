@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../styles/black-metal.css">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../docs.css">
+    <title>Button</title>
+</head>
+<body>
+    <nav>
+        <a href="../../../index.html"><h1 class="brand">KHABAR.CSS</h1></a> 
+        <ul>
+            <a href="../../usage.html"><li>Documentation</li></a>
+            <a href="https://github.com/minku-singh/khabar.css"><li>GitHub</li></a>
+        </ul>
+        <img class="icon hamburger" src="https://img.icons8.com/dotty/80/undefined/xbox-menu.png"/>
+        <img class="icon cross" src="https://img.icons8.com/dotty/80/undefined/filled-cancel.png"/>
+        <ul class="list">
+            <div class="list-head"><h3>Getting Started</h3></div>
+            <div class="list-body">
+                <a><li>Usage</li></a>
+            </div>
+
+            <div class="list-head"><h3>Components</h3></div>
+            <div class="list-body">
+                <a><li>Alert</li></a>
+                <a class="list-active" href="#"><li>Avatar</li></a>
+                <a href="#"><li>Badge</li></a>
+                <a href="#"><li>Button</li></a>
+                <a href="#"><li>Card</li></a>
+                <a href="#"><li>Image</li></a>
+                <a href="#"><li>Input</li></a>
+                <a href="#"><li>List</li></a>
+                <a href="#"><li>Navigation</li></a>
+                <a href="#"><li>Sidebar</li></a>
+                <a href="#"><li>Toast</li></a>
+            </div>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <ul class="sidebar">
+            <div class="sidebar-head"><h3>Getting Started</h3></div>
+            <div class="sidebar-body">
+                <a href="./../../usage.html"><li>Usage</li></a>
+            </div>
+
+            <div class="sidebar-head"><h3>Components</h3></div>
+            <div class="sidebar-body">
+                <a><li>Alert</li></a>
+                <a href="#"><li>Avatar</li></a>
+                <a href="#"><li>Badge</li></a>
+                <a href="#"><li>Button</li></a>
+                <a href="#"><li class="sidebar-active">Card</li></a>
+                <a href="#"><li>Image</li></a>
+                <a href="#"><li>Input</li></a>
+                <a href="#"><li>List</li></a>
+                <a href="#"><li>Navigation</li></a>
+                <a href="#"><li>Sidebar</li></a>
+                <a href="#"><li>Toast</li></a>
+            </div>
+        </ul>
+
+        <!--------------------------- changing  ---------------------------------->
+        <main>
+            <article>
+                <h2>Card</h2>
+                <p>Show item details with card.</p>
+
+                <h3>Responsive Card</h3>
+                <p>Card is responsive to all screen widths. And adjusts well to all provided images.</p>
+                <div class="component-wrapper">
+                    <div class = "card">
+                        <img class="card-img" src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1200,q_50/lsci/db/PICTURES/CMS/339600/339696.jpg" alt="">
+                        
+                        <div class="card-text">
+                            <a href="">
+                                <h3 class="card-heading">
+                                    MS Dhoni and the guilds
+                                </h3>
+                            </a>
+                            <h5 class="card-sub-heading">by MS Anokha</h5>
+                            <p class="card-para">MS has been ... Lorem ipsum rchitecto dolorum enim impedit assumenda tenetur!</p>
+                            <div class="card-price">
+                                <span class="price">₹237</span>
+                                <span class="price-original"><strike>₹499</strike></span>
+                            </div>
+                        </div>
+                        <button class="card-icon">
+                            <img class="icon" src="https://img.icons8.com/dotty/80/undefined/hearts.png"/>
+                            <!-- <i class="fa-solid fa-heart icon"></i> -->
+                        </button>
+                    </div>
+
+                    <div class = "card">
+                        <img class="card-img" src="../../../assets/images/avatar-dhoni.jpg" alt="dhoni"/>
+                        <div class="card-text">
+                            <a href="">
+                                <h3 class="card-heading">
+                                    MS Dhoni and the guilds
+                                </h3>
+                            </a>
+                            <h5 class="card-sub-heading">by MS Anokha</h5>
+                            <p class="card-para">MS has been ... Lorem ipsum rchitecto dolorum enim impedit assumenda tenetur!</p>
+                            <div class="card-price">
+                                <span class="price">₹237</span>
+                                <span class="price-original"><strike>₹499</strike></span>
+                            </div>
+                        </div>
+                        <button class="card-icon">
+                            <img class="icon" src="https://img.icons8.com/dotty/80/undefined/hearts.png"/>
+                            <!-- <i class="fa-solid fa-heart icon"></i> -->
+                        </button>
+                    </div>
+                </div>
+
+                <div class="code-snippet">
+                    <pre>
+                        <code class="language-html">
+&lt;div class = "card"&gt;
+    &lt;img class="card-img" src="..."/&gt;
+    &lt;div class="card-text"&gt;
+        &lt;a href=""&gt;
+            &lt;h3 class="card-heading"&gt;
+                MS Dhoni and the guilds
+            &lt;/h3&gt;
+        &lt;/a&gt;
+        &lt;h5 class="card-sub-heading"&gt;by MS Anokha&lt;/h5&gt;
+        &lt;p class="card-para"&gt;MS has been ... Lorem ipsum rchitecto dolorum enim impedit assumenda tenetur!&lt;/p&gt;
+        &lt;div class="card-price"&gt;
+            &lt;span class="price"&gt;₹237&lt;/span&gt;
+            &lt;span class="price-original"&gt;&lt;strike&gt;₹499&lt;/strike&gt;&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;button class="card-icon"&gt;
+        &lt;img class="icon" src="https://img.icons8.com/dotty/80/undefined/hearts.png"/&gt;
+    &lt;/button&gt;
+&lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+
+            </article>
+
+            <div class="item-btn">
+                <a href="../Button/button.html"><button class="btn-primary">&lt; Button </button></a>
+                <a href="../Image/image.html"><button class="btn-primary"> Image &gt; </button></a> 
+            </div>
+        </main>
+        <!-- ------------------------------------------------------------------------------>
+    
+    </div>
+
+    <script src="../../../javascript/highlight.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <script src="../../../javascript/script.js"></script>
+</body>
+</html>

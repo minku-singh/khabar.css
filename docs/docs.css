@@ -25,6 +25,10 @@ main p{
     border-radius: 10px;
 }
 
+.card{
+    margin-bottom: 1em;
+}
+
 .item-btn{
     display: flex;
     justify-content: space-between;
