@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../styles/black-metal.css">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../docs.css">
+    <title>Button</title>
+</head>
+<body>
+    <nav>
+        <a href="../../../index.html"><h1 class="brand">KHABAR.CSS</h1></a> 
+        <ul>
+            <a href="../../usage.html"><li>Documentation</li></a>
+            <a href="https://github.com/minku-singh/khabar.css"><li>GitHub</li></a>
+        </ul>
+        <img class="icon hamburger" src="https://img.icons8.com/dotty/80/undefined/xbox-menu.png"/>
+        <img class="icon cross" src="https://img.icons8.com/dotty/80/undefined/filled-cancel.png"/>
+        <ul class="list">
+            <div class="list-head"><h3>Getting Started</h3></div>
+            <div class="list-body">
+                <a><li>Usage</li></a>
+            </div>
+
+            <div class="list-head"><h3>Components</h3></div>
+            <div class="list-body">
+                <a><li>Alert</li></a>
+                <a class="list-active" href="#"><li>Avatar</li></a>
+                <a href="#"><li>Badge</li></a>
+                <a href="#"><li>Button</li></a>
+                <a href="#"><li>Card</li></a>
+                <a href="#"><li>Image</li></a>
+                <a href="#"><li>Input</li></a>
+                <a href="#"><li>List</li></a>
+                <a href="#"><li>Navigation</li></a>
+                <a href="#"><li>Sidebar</li></a>
+                <a href="#"><li>Toast</li></a>
+            </div>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <ul class="sidebar">
+            <div class="sidebar-head"><h3>Getting Started</h3></div>
+            <div class="sidebar-body">
+                <a href="./../../usage.html"><li>Usage</li></a>
+            </div>
+
+            <div class="sidebar-head"><h3>Components</h3></div>
+            <div class="sidebar-body">
+                <a><li>Alert</li></a>
+                <a href="#"><li>Avatar</li></a>
+                <a href="#"><li>Badge</li></a>
+                <a href="#"><li>Button</li></a>
+                <a href="#"><li class="sidebar-active">Card</li></a>
+                <a href="#"><li>Image</li></a>
+                <a href="#"><li>Input</li></a>
+                <a href="#"><li>List</li></a>
+                <a href="#"><li>Navigation</li></a>
+                <a href="#"><li>Sidebar</li></a>
+                <a href="#"><li>Toast</li></a>
+            </div>
+        </ul>
+
+        <!--------------------------- changing  ---------------------------------->
+        <main>
+            <article>
+                <h2>Image</h2>
+                <p>Make responsive image with Image component. It changes size based on its container.</p>
+
+                <h3>Responsive Image</h3>
+                <p>All of your images with <span class="variant">&lt;img&gt;</span> tag are responsive.</p>
+                <div class="component-wrapper">
+                    <img src="../../../assets/images/avatar-dhoni.jpg" alt="dhoni">
+                </div>
+
+                <div class="code-snippet">
+                    <pre>
+                        <code class="language-html">
+&lt;img src="..." alt="..."&gt;
+                        </code>
+                    </pre>
+                </div>
+
+                <h3>Responsive Circular Image</h3>
+                <p>Add <span class="variant">img-circle</span> class on <span class="variant">&lt;img&gt;</span>tag.</p>
+                <div class="component-wrapper">
+                    <img src="../../../assets/images/avatar-dhoni.jpg" alt="dhoni" class="img-circle">
+                </div>
+
+                <div class="code-snippet">
+                    <pre>
+                        <code class="language-html">
+&lt;img src="..." alt="..." class = "img-circle" &gt;
+                        </code>
+                    </pre>
+                </div>
+
+            </article>
+
+            <div class="item-btn">
+                <a href="../Button/button.html"><button class="btn-primary">&lt; Button </button></a>
+                <a href="../Image/image.html"><button class="btn-primary"> Image &gt; </button></a> 
+            </div>
+        </main>
+        <!-- ------------------------------------------------------------------------------>
+    
+    </div>
+
+    <script src="../../../javascript/highlight.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <script src="../../../javascript/script.js"></script>
+</body>
+</html>
