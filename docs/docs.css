@@ -3,12 +3,12 @@
 }
 
 main{
-    margin-left: 2em;
     max-width: 80%;
     margin-right: 2em;
     margin-bottom: 1em;
     overflow: hidden;
     min-width: 75%;
+    margin-left: 23vw;
 }
 
 main p{

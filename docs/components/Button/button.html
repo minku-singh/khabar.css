@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../styles/black-metal.css">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../docs.css">
+    <title>Button</title>
+</head>
+<body>
+    <nav>
+        <a href="../../../index.html"><h1 class="brand">KHABAR.CSS</h1></a> 
+        <ul>
+            <a href="../../usage.html"><li>Documentation</li></a>
+            <a href="https://github.com/minku-singh/khabar.css"><li>GitHub</li></a>
+        </ul>
+        <img class="icon hamburger" src="https://img.icons8.com/dotty/80/undefined/xbox-menu.png"/>
+        <img class="icon cross" src="https://img.icons8.com/dotty/80/undefined/filled-cancel.png"/>
+        <ul class="list">
+            <div class="list-head"><h3>Getting Started</h3></div>
+            <div class="list-body">
+                <a><li>Usage</li></a>
+            </div>
+
+            <div class="list-head"><h3>Components</h3></div>
+            <div class="list-body">
+                <a><li>Alert</li></a>
+                <a class="list-active" href="#"><li>Avatar</li></a>
+                <a href="#"><li>Badge</li></a>
+                <a href="#"><li>Button</li></a>
+                <a href="#"><li>Card</li></a>
+                <a href="#"><li>Image</li></a>
+                <a href="#"><li>Input</li></a>
+                <a href="#"><li>List</li></a>
+                <a href="#"><li>Navigation</li></a>
+                <a href="#"><li>Sidebar</li></a>
+                <a href="#"><li>Toast</li></a>
+            </div>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <ul class="sidebar">
+            <div class="sidebar-head"><h3>Getting Started</h3></div>
+            <div class="sidebar-body">
+                <a href="./../../usage.html"><li>Usage</li></a>
+            </div>
+
+            <div class="sidebar-head"><h3>Components</h3></div>
+            <div class="sidebar-body">
+                <a><li>Alert</li></a>
+                <a href="#"><li>Avatar</li></a>
+                <a href="#"><li>Badge</li></a>
+                <a href="#"><li class="sidebar-active">Button</li></a>
+                <a href="#"><li>Card</li></a>
+                <a href="#"><li>Image</li></a>
+                <a href="#"><li>Input</li></a>
+                <a href="#"><li>List</li></a>
+                <a href="#"><li>Navigation</li></a>
+                <a href="#"><li>Sidebar</li></a>
+                <a href="#"><li>Toast</li></a>
+            </div>
+        </ul>
+
+        <!--------------------------- changing  ---------------------------------->
+        <main>
+            <article>
+                <h2>Button</h2>
+                <p>Show buttons with button component.</p>
+
+                <h3>Solid Buttons</h3>
+                <p>Solid buttons are available in 4 variants <span class="variant">btn-primary</span>, <span class="variant">btn-secondary</span>, <span class="variant">btn-danger</span> and <span class="variant">btn-warn</span>.</p>
+                <div class="component-wrapper">
+                    <button class="btn-primary" type="button">Primary</button>
+                    <button class="btn-success" type="button">Success</button>
+                    <button class="btn-danger" type="button">Danger</button>
+                    <button class="btn-warn" type="button">Warn</button>
+                </div>
+
+                <div class="code-snippet">
+                    <pre>
+                        <code class="language-html">
+&lt;button class="btn-primary" type="button"&gt;Primary&lt;/button&gt;
+&lt;button class="btn-success" type="button"&gt;Success&lt;/button&gt;
+&lt;button class="btn-danger" type="button"&gt;Danger&lt;/button&gt;
+&lt;button class="btn-warn" type="button"&gt;Warn&lt;/button&gt;
+                        </code>
+                    </pre>
+                </div>
+
+                <h3>Outline button</h3>
+                <p>Outline buttons are available in 4 variants <span class="variant">btn-outline-primary</span>, <span class="variant">btn-outline-success</span>, <span class="variant">btn-outline-danger</span> and <span class="variant">btn-outline-warn</span>.</p>
+                <div class="component-wrapper">
+                    <button class="btn-outline-primary" type="button">Primary</button>
+                    <button class="btn-outline-success" type="button">Success</button>
+                    <button class="btn-outline-danger" type="button">Danger</button>
+                    <button class="btn-outline-warn" type="button">Warn</button>
+                </div>
+
+                <div class="code-snippet">
+                    <pre>
+                        <code class="language-html">
+&lt;button class="btn-outline-primary" type="button"&gt;Primary&lt;/button&gt;
+&lt;button class="btn-outline-success" type="button"&gt;Success&lt;/button&gt;
+&lt;button class="btn-outline-danger" type="button"&gt;Danger&lt;/button&gt;
+&lt;button class="btn-outline-warn" type="button"&gt;Warn&lt;/button&gt;
+                        </code>
+                    </pre>
+                </div>
+
+
+                <h3>Button with icon</h3>
+                <p>Add <span class="variant">btn-icon</span> class and link to the icon (best to use from "https://icons8.com/icon/set/whatsapp/dotty--black" replace whatsapp with any icon name) to get button with badge.</p>
+                <div class="component-wrapper">
+                    <button class="btn-success btn-icon" type="button">
+                        <img class="icon" src="https://img.icons8.com/dotty/80/undefined/shopping-cart.png"/>
+                        <span>Add to Cart</span>
+                    </button>
+                    <button class="btn-danger btn-icon" type="button">
+                        <img class="icon" src="https://img.icons8.com/dotty/80/undefined/delete.png"/>
+                        <span>Delete</span>
+                    </button>
+                </div>
+
+                <div class="code-snippet">
+                    <pre>
+                        <code class="language-html">
+&lt;button class="btn-success btn-icon" type="button"&gt;
+    &lt;img class="icon" src="..."/&gt;
+    &lt;span&gt;Add to Cart&lt;/span&gt;
+&lt;/button&gt;
+&lt;button class="btn-danger btn-icon" type="button"&gt;
+    &lt;img class="icon" src="..."/&gt;
+    &lt;span&gt;Delete&lt;/span&gt;
+&lt;/button&gt;
+                        </code>
+                    </pre>
+                </div>
+
+            </article>
+
+            <div class="item-btn">
+                <a href="../Badge/badge.html"><button class="btn-primary">&lt; Badge </button></a>
+                <a href="../Card/card.html"><button class="btn-primary"> Card &gt; </button></a> 
+            </div>
+        </main>
+        <!-- ------------------------------------------------------------------------------>
+    
+    </div>
+
+    <script src="../../../javascript/highlight.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <script src="../../../javascript/script.js"></script>
+</body>
+</html>

@@ -501,6 +501,7 @@ a{
     border: none;
     min-width: 20vw;
     /* border-right: 2px solid var(--color-dark); */
+    position: fixed;
 }
 .sidebar li{
     list-style: none;
