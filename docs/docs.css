@@ -107,5 +107,12 @@ body > nav{
         display: flex;
         flex-direction: column;
     }
+    article li h5{
+        margin: 0;
+    }
+
+    article li{
+        margin-bottom: 1em;
+    }
 
 }
