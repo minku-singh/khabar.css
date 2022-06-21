@@ -545,11 +545,11 @@ a{
     /* display: inline-flex; */
     /* align-items: center; */
     /* justify-content: center; */
-    background-color: var(--bg-secondary);
+    background-color: var(--bg-primary);
     padding: 0.3em 0.6em;
     box-shadow: 5px 2px 5px var(--color-fade-dark);
     border-left: 2px solid var(--color-dark);
-    position: fixed;
+    position: absolute;
     /* max-width: 40em; */
     width: fit-content;
     z-index: 5;

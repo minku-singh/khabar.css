@@ -64,6 +64,10 @@ body > nav{
     background-color: var(--bg-secondary);
     padding: 1em;
 }
+.modal-wrapper{
+    position: relative;
+    min-height: 20em;
+}
 
 @media screen and (max-width: 768px){
     main{
