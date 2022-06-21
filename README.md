@@ -1,3 +1,5 @@
+<a href = "https://www.npmjs.com/package/khabar.css"><img src = "./assets/images/npm.svg"></a>
+
 # khabar.css 
 ![logo](./assets/images/logo.jpg)
 
