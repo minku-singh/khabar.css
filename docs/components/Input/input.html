@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../../../styles/black-metal.css">
     <link rel="stylesheet" href="../../../style.css">
     <link rel="stylesheet" href="../../docs.css">
-    <title>Button</title>
+    <title>Input</title>
 </head>
 <body>
     <nav>
@@ -55,8 +55,8 @@
                 <a href="#"><li>Badge</li></a>
                 <a href="#"><li>Button</li></a>
                 <a href="#"><li>Card</li></a>
-                <a href="#"><li class="sidebar-active">Image</li></a>
-                <a href="#"><li>Input</li></a>
+                <a href="#"><li>Image</li></a>
+                <a href="#"><li class="sidebar-active">Input</li></a>
                 <a href="#"><li>List</li></a>
                 <a href="#"><li>Navigation</li></a>
                 <a href="#"><li>Sidebar</li></a>
@@ -67,42 +67,72 @@
         <!--------------------------- changing  ---------------------------------->
         <main>
             <article>
-                <h2>Image</h2>
-                <p>Make responsive image with Image component. It changes size based on its container.</p>
+                <h2>Input</h2>
+                <p>Take input from user with Input component.</p>
 
-                <h3>Responsive Image</h3>
-                <p>All of your images with <span class="variant">&lt;img&gt;</span> tag are responsive.</p>
+                <h3>Standard Input</h3>
+                <p>This is the standard input.</p>
                 <div class="component-wrapper">
-                    <img src="../../../assets/images/avatar-dhoni.jpg" alt="dhoni">
+                    <div class="input">
+                        <input type="text">
+                        <div>Label</div>
+                    </div>
                 </div>
 
                 <div class="code-snippet">
                     <pre>
                         <code class="language-html">
-&lt;img src="..." alt="..."&gt;
+&lt;div class="input"&gt;
+    &lt;input type="text"&gt;
+    &lt;div&gt;Label&lt;/div&gt;
+&lt;/div&gt;
                         </code>
                     </pre>
                 </div>
 
-                <h3>Responsive Circular Image</h3>
-                <p>Add <span class="variant">img-circle</span> class on <span class="variant">&lt;img&gt;</span>tag.</p>
+                <h3>Input Validation</h3>
+                <p>Validation has 3 variants <span class="variant">input-danger</span>, <span class="variant">input-warn</span> and <span class="variant">input-success</span></p>
                 <div class="component-wrapper">
-                    <img src="../../../assets/images/avatar-dhoni.jpg" alt="dhoni" class="img-circle">
+                    <div class="input">
+                        <input class="input-danger" type="text">
+                        <div>Label</div>
+                    </div>
+                    <div class="input">
+                        <input class="input-warn" type="text">
+                        <div>Label</div>
+                    </div>
+                    <div class="input">
+                        <input class="input-success" type="text">
+                        <div>Label</div>
+                    </div>
                 </div>
 
                 <div class="code-snippet">
                     <pre>
                         <code class="language-html">
-&lt;img src="..." alt="..." class = "img-circle" &gt;
+&lt;div class="input"&gt;
+    &lt;input class="input-danger" type="text"&gt;
+    &lt;div&gt;Label&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="input"&gt;
+    &lt;input class="input-warn" type="text"&gt;
+    &lt;div&gt;Label&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="input"&gt;
+    &lt;input class="input-success" type="text"&gt;
+    &lt;div&gt;Label&lt;/div&gt;
+&lt;/div&gt;
                         </code>
                     </pre>
                 </div>
+
+                
 
             </article>
 
             <div class="item-btn">
-                <a href="../Card/card.html"><button class="btn-primary">&lt; Card </button></a>
-                <a href="../Input/input.html"><button class="btn-primary"> Input &gt; </button></a> 
+                <a href="../Image/image.html"><button class="btn-primary">&lt; Image </button></a>
+                <a href="../List/list.html"><button class="btn-primary"> List &gt; </button></a> 
             </div>
         </main>
         <!--------------------------------------------------------------------------------->

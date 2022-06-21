@@ -465,6 +465,7 @@ nav a{
     border: 2px solid var(--color-dark);
     width: auto;
     padding: 1.5em;
+    background-color: var(--bg-primary);
 }
 .list-global{
     max-width: 30em;

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../../../styles/black-metal.css">
     <link rel="stylesheet" href="../../../style.css">
     <link rel="stylesheet" href="../../docs.css">
-    <title>Button</title>
+    <title>List</title>
 </head>
 <body>
     <nav>
@@ -55,8 +55,8 @@
                 <a href="#"><li>Badge</li></a>
                 <a href="#"><li>Button</li></a>
                 <a href="#"><li>Card</li></a>
-                <a href="#"><li class="sidebar-active">Image</li></a>
-                <a href="#"><li>Input</li></a>
+                <a href="#"><li>Image</li></a>
+                <a href="#"><li class="sidebar-active">Input</li></a>
                 <a href="#"><li>List</li></a>
                 <a href="#"><li>Navigation</li></a>
                 <a href="#"><li>Sidebar</li></a>
@@ -67,33 +67,41 @@
         <!--------------------------- changing  ---------------------------------->
         <main>
             <article>
-                <h2>Image</h2>
-                <p>Make responsive image with Image component. It changes size based on its container.</p>
+                <h2>List</h2>
+                <p>Show the list of items with List component.</p>
 
-                <h3>Responsive Image</h3>
-                <p>All of your images with <span class="variant">&lt;img&gt;</span> tag are responsive.</p>
+                <h3>Standard List</h3>
+                <p>This is the standard List. Add <span class="variant">list-active</span> class to represent an active link. List can be used in small screen size navigation too.</p>
                 <div class="component-wrapper">
-                    <img src="../../../assets/images/avatar-dhoni.jpg" alt="dhoni">
+                    <ul class="list list-global">
+                        <div class="list-head"><h2>Heading</h2></div>
+                        <div class="list-body">
+                            <a><li class="list-active">Active Link</li></a>
+                            <a><li>Ipsum</li></a>
+                            <a><li>Ipsum</li></a>
+                            <a><li>Ipsum</li></a>
+                            <a><li>Ipsum</li></a>
+                            <a href="#"><li>Ipsum</li></a>
+                            <a href="#"><li>Ipsum</li></a>
+                            <a href="#"><li>Ipsum</li></a>
+                            <a href="#"><li>Ipsum</li></a>
+                        </div>
+                    </ul>
                 </div>
 
                 <div class="code-snippet">
                     <pre>
                         <code class="language-html">
-&lt;img src="..." alt="..."&gt;
-                        </code>
-                    </pre>
-                </div>
-
-                <h3>Responsive Circular Image</h3>
-                <p>Add <span class="variant">img-circle</span> class on <span class="variant">&lt;img&gt;</span>tag.</p>
-                <div class="component-wrapper">
-                    <img src="../../../assets/images/avatar-dhoni.jpg" alt="dhoni" class="img-circle">
-                </div>
-
-                <div class="code-snippet">
-                    <pre>
-                        <code class="language-html">
-&lt;img src="..." alt="..." class = "img-circle" &gt;
+&lt;ul class="list list-global"&gt;
+    &lt;div class="list-head"&gt;&lt;h2&gt;Heading&lt;/h2&gt;&lt;/div&gt;
+    &lt;div class="list-body"&gt;
+        &lt;a&gt;&lt;li class="list-active"&gt;Active Link&lt;/li&gt;&lt;/a&gt;
+        &lt;a href="#"&gt;&lt;li&gt;Ipsum&lt;/li&gt;&lt;/a&gt;
+        &lt;a href="#"&gt;&lt;li&gt;Ipsum&lt;/li&gt;&lt;/a&gt;
+        &lt;a href="#"&gt;&lt;li&gt;Ipsum&lt;/li&gt;&lt;/a&gt;
+        &lt;a href="#"&gt;&lt;li&gt;Ipsum&lt;/li&gt;&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/ul&gt;
                         </code>
                     </pre>
                 </div>
@@ -101,8 +109,8 @@
             </article>
 
             <div class="item-btn">
-                <a href="../Card/card.html"><button class="btn-primary">&lt; Card </button></a>
-                <a href="../Input/input.html"><button class="btn-primary"> Input &gt; </button></a> 
+                <a href="../Input/input.html"><button class="btn-primary">&lt; Input </button></a>
+                <a href="../Navigation/navigation.html"><button class="btn-primary"> Navigation &gt; </button></a> 
             </div>
         </main>
         <!--------------------------------------------------------------------------------->
