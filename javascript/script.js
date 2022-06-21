@@ -10,11 +10,9 @@ function toggleList(){
         navList.removeAttribute("id", "show-list");
         hamburger.removeAttribute("id", "hide-hamburger");
         cross.removeAttribute("id", "show-cross");
-        console.log("toggled");
     }else{
         navList.setAttribute("id", "show-list");
         hamburger.setAttribute("id", "hide-hamburger");
         cross.setAttribute("id", "show-cross");
-        console.log("tok=ggled");
     }
 }
