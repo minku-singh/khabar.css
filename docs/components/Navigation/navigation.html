@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../styles/black-metal.css">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../docs.css">
+    <title>List</title>
+</head>
+<body>
+    <nav>
+        <a href="../../../index.html"><h1 class="brand">KHABAR.CSS</h1></a> 
+        <ul>
+            <a href="../../usage.html"><li>Documentation</li></a>
+            <a href="https://github.com/minku-singh/khabar.css"><li>GitHub</li></a>
+        </ul>
+        <img class="icon hamburger" src="https://img.icons8.com/dotty/80/undefined/xbox-menu.png"/>
+        <img class="icon cross" src="https://img.icons8.com/dotty/80/undefined/filled-cancel.png"/>
+        <ul class="list">
+            <div class="list-head"><h3>Getting Started</h3></div>
+            <div class="list-body">
+                <a><li>Usage</li></a>
+            </div>
+
+            <div class="list-head"><h3>Components</h3></div>
+            <div class="list-body">
+                <a><li>Alert</li></a>
+                <a class="list-active" href="#"><li>Avatar</li></a>
+                <a href="#"><li>Badge</li></a>
+                <a href="#"><li>Button</li></a>
+                <a href="#"><li>Card</li></a>
+                <a href="#"><li>Image</li></a>
+                <a href="#"><li>Input</li></a>
+                <a href="#"><li>List</li></a>
+                <a href="#"><li>Navigation</li></a>
+                <a href="#"><li>Sidebar</li></a>
+                <a href="#"><li>Toast</li></a>
+            </div>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <ul class="sidebar">
+            <div class="sidebar-head"><h3>Getting Started</h3></div>
+            <div class="sidebar-body">
+                <a href="./../../usage.html"><li>Usage</li></a>
+            </div>
+
+            <div class="sidebar-head"><h3>Components</h3></div>
+            <div class="sidebar-body">
+                <a><li>Alert</li></a>
+                <a href="#"><li>Avatar</li></a>
+                <a href="#"><li>Badge</li></a>
+                <a href="#"><li>Button</li></a>
+                <a href="#"><li>Card</li></a>
+                <a href="#"><li>Image</li></a>
+                <a href="#"><li>Input</li></a>
+                <a href="#"><li class="sidebar-active">List</li></a>
+                <a href="#"><li>Navigation</li></a>
+                <a href="#"><li>Sidebar</li></a>
+                <a href="#"><li>Toast</li></a>
+            </div>
+        </ul>
+
+        <!--------------------------- changing  ---------------------------------->
+        <main>
+            <article>
+                <h2>Navigation</h2>
+                <p>Add responsive navigation which adapts according to the screen size.</p>
+
+                <h3>Standard List</h3>
+                <p>This is the standard List. Add <span class="variant">list-active</span> class to represent an active link. List can be used in small screen size navigation too.</p>
+                <div class="component-wrapper">
+                    <nav>
+                        <h1 class="brand">KHABAR.CSS</h1>
+                        <ul>
+                            <a href="..."><li>lorem</li></a>
+                            <a href="..."><li>lorem</li></a>
+                            <a href="..."><li>lorem</li></a>
+                        </ul>
+                        <img class="icon hamburger" src="https://img.icons8.com/dotty/80/undefined/xbox-menu.png"/>
+                        <img class="icon cross" src="https://img.icons8.com/dotty/80/undefined/filled-cancel.png"/>
+                        <ul class="list">
+                            <div class="list-head"><h2>Heading</h2></div>
+                            <div class="list-body">
+                                <a href="#"><li class="list-active">Active Link</li></a>
+                                <a href="..."><li>Ipsum</li></a>
+                                <a href="..."><li>Ipsum</li></a>
+                                <a href="..."><li>Ipsum</li></a>
+                                <a href="..."><li>Ipsum</li></a>
+                                <a href="..."><li>Ipsum</li></a>
+                                <a href="..."><li>Ipsum</li></a>
+                                <a href="..."><li>Ipsum</li></a>
+                                <a href="..."><li>Ipsum</li></a>
+                            </div>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="code-snippet">
+                    <pre>
+                        <code class="language-html">
+&lt;nav&gt;
+    &lt;h1 class="brand"&gt;KHABAR.CSS&lt;/h1&gt;
+    &lt;ul&gt;
+        &lt;a href = "..."&gt;&lt;li&gt;lorem&lt;/li&gt;&lt;/a&gt;
+        &lt;a href = "..."&gt;&lt;li&gt;lorem&lt;/li&gt;&lt;/a&gt;
+        &lt;a href = "..."&gt;&lt;li&gt;lorem&lt;/li&gt;&lt;/a&gt;
+    &lt;/ul&gt;
+    &lt;img class="icon hamburger" src="https://img.icons8.com/dotty/80/undefined/xbox-menu.png"/&gt;
+    &lt;img class="icon cross" src="https://img.icons8.com/dotty/80/undefined/filled-cancel.png"/&gt;
+    &lt;ul class="list"&gt;
+        &lt;div class="list-head"&gt;&lt;h2&gt;Heading&lt;/h2&gt;&lt;/div&gt;
+        &lt;div class="list-body"&gt;
+            &lt;a href="#"&gt;&lt;li class="list-active"&gt;Active Link&lt;/li&gt;&lt;/a&gt;
+            &lt;a href = "..."&gt;&lt;li&gt;Ipsum&lt;/li&gt;&lt;/a&gt;
+            &lt;a href = "..."&gt;&lt;li&gt;Ipsum&lt;/li&gt;&lt;/a&gt;
+            &lt;a href = "..."&gt;&lt;li&gt;Ipsum&lt;/li&gt;&lt;/a&gt;
+            &lt;a href = "..."&gt;&lt;li&gt;Ipsum&lt;/li&gt;&lt;/a&gt;
+            &lt;a href = "..."&gt;&lt;li&gt;Ipsum&lt;/li&gt;&lt;/a&gt;
+            &lt;a href = "..."&gt;&lt;li&gt;Ipsum&lt;/li&gt;&lt;/a&gt;
+            &lt;a href = "..."&gt;&lt;li&gt;Ipsum&lt;/li&gt;&lt;/a&gt;
+            &lt;a href = "..."&gt;&lt;li&gt;Ipsum&lt;/li&gt;&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+                        </code>
+                    </pre>
+                </div>
+
+            </article>
+
+            <div class="item-btn">
+                <a href="../List/list.html"><button class="btn-primary">&lt; List </button></a>
+                <a href="../Toast/toast.html"><button class="btn-primary"> Toast &gt; </button></a> 
+            </div>
+        </main>
+        <!--------------------------------------------------------------------------------->
+    
+    </div>
+
+    <script src="../../../javascript/highlight.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <script src="../../../javascript/script.js"></script>
+</body>
+</html>

@@ -362,7 +362,7 @@ input + div{
     position: sticky;
     max-width: 40em;
     z-index: 5;
-    top: 66%;
+    top: 82%;
     left: 55%;
 }
 .toast-retry{
@@ -386,7 +386,6 @@ nav{
     padding-top: 1.5em;
     border-bottom: 2px solid var(--color-dark);
     z-index: 10;
-    position: fixed;
     background-color: var(--bg-primary);
     width: 98%;
 }
@@ -574,6 +573,7 @@ footer{
     /* position: absolute; */
     bottom: 0;
     width: 98%;
+    background-color: var(--bg-primary);
 }
 footer .dots{
     display: flex;
@@ -652,10 +652,6 @@ small{
     }
     #show-cross{
         display: block;
-    }
-    nav{
-        /* position: relative; */
-        position: fixed;
     }
     nav .list{
         position: absolute;
